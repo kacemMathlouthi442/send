@@ -35,7 +35,7 @@ def send_local_sms(phone, text):
 
 def throttle():
     """Apply random delay to avoid SIM detection."""
-    delay = random.uniform(MMIN_DELAY, MAX_DELAY)
+    delay = random.uniform(MIN_DELAY, MAX_DELAY)
     print(f"[WAIT] Sleeping {delay:.1f} seconds…")
     time.sleep(delay)
 
